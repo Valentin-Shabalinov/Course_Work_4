@@ -1,5 +1,7 @@
 .DS_Store
 .vscode
+database.ini
+.get-pip.py
 /venv
 /youtube_api_manual.py
 .pytest_cache
