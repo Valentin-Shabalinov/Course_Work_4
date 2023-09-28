@@ -9,7 +9,7 @@ def main():
     database = 'headhanter'
     url = "https://api.hh.ru/employers"
     params = config()
-    world = "python"
+    world = "дизайнер"
     dbmanager = DBManager(database, params, world)
     
     data = get_headhanter_data(url)

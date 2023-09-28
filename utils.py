@@ -177,8 +177,9 @@ class DBManager():
             WHERE name LIKE '%{self.world}%'
         """)
         rows = self.cur.fetchall()
-        for row in rows:
-            if rows:
-                print(f"По запросу {self.world} не найдено вакансий")
-            else:
+        
+        if len(rows) == 0:
+            print(f"По запросу {self.world} не найдено вакансий")
+        else:
+            for row in rows:
                 print(row)
